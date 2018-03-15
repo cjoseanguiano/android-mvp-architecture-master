@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".presentation.ui.screen.main.MainActivity">
+
+    <TextView
+        android:id="@+id/textview_main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="@string/text.main.no.authors"
+        android:textAlignment="center"
+        android:textColor="@color/dark"
+        android:textSize="16sp"
+        android:visibility="gone" />
+
+    <!--<android.support.v4.widget.SwipeRefreshLayout-->
+    <!--android:id="@+id/swiperefresh_main"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--app:layout_behavior="@string/appbar_scrolling_view_behavior">-->
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerview_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bone_white"
+        android:paddingTop="8dp"
+        android:scrollbars="vertical"
+        android:visibility="visible"
+        tools:listitem="@layout/row_main" />
+    <!--</android.support.v4.widget.SwipeRefreshLayout>-->
+</RelativeLayout>
